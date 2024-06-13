@@ -1,0 +1,54 @@
+@use '../abstract/' as *;
+
+.footer{
+    background-color: $clr-footer;
+    padding: 5rem;
+    &__wrapper{
+        @include grid(1);
+        gap: 2rem;
+        place-items: center;
+        @include mediaQuery{
+        @include grid(3);
+        gap: 18rem;
+        }
+        .socials{
+            ul{
+                @include flex(center);
+                gap: 3rem;
+                color: $clr-accent;
+                font-size: 2.563rem;
+            }
+        }
+        .footer__info{
+            text-align: center;
+            p{
+                color: $clr-light;
+            }
+        }
+        .footer__button{
+            button{
+                transition: all 0.4s ease-in-out;
+    color: white;
+    border: none;
+    background: #f6ad49;
+    padding: 12px 20px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    font-size: 1.125rem;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    a{
+        color: $clr-light;
+        font-weight: bolder;
+        font-size: 1.5rem;
+    }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+:root{
+    --light: #fff;
+    --dark: #000;
+}
+
+$clr-light: var(--light);
+$clr-dark: var(--dark);
+
+$clr-accent: #f6b253;
+$clr-primary: #fef7ef;
+$clr-red: #e60033;
+//e60033 red for font
+// 433d3c
+$clr-font: #433d3c;
+$clr-footer: #433d3c;
+
+
+$clr-white: #fff;
+
+$sm: "42rem";
+$md: "92rem";
+$lg: "144rem";
+$xl: "180rem";

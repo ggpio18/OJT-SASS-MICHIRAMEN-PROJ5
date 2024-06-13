@@ -1,0 +1,120 @@
+@use '../abstract/' as *;
+
+.background__image{
+    min-height: 100vh;
+    background-image: url('../../photo/bg-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5rem;
+.header{
+    &__wrapper{
+        font-family: "cd-meidum";
+        padding: 1rem 0;
+        margin-bottom: 4rem;
+        @include flex(space-between, center);
+        a{
+            img{
+                max-width: 38%;
+            }
+        }
+        button{
+            font-family: "cd-medium";
+            font-size: 2rem;
+            font-style: bold;
+            font-weight: bolder;
+            border: none;
+            min-width: 10rem;
+            padding: 1.2rem;
+            border: none;
+            border-radius: 1rem;
+            text-transform: uppercase;
+            background: $clr-accent;
+            color: $clr-light;
+        }
+        ul.open{
+            visibility: visible;
+            opacity: 1;
+        }
+        ul{
+            @include mediaQuery{
+                position: static;
+                background-color: unset;
+                padding: unset;
+                width: auto;
+                height: unset;
+                flex-direction: row;
+                visibility: visible;
+                 opacity: 1;
+                li a{
+                    font-size: 1.6rem !important;
+                    color: $clr-light;
+                }
+            }
+            position: fixed;
+            background: $clr-light;
+            top: 5rem;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 99999;
+            flex-direction: column;
+             justify-content: center;
+            align-items: center;
+            padding-top: 30%;
+            visibility: hidden;
+            opacity: 0;
+            transition: .5s ease;
+            li{
+                text-align: center;
+                color: $clr-dark;
+                a{
+                    font-size: 4rem;
+                    color: $clr-light;
+                    font-weight: 800;
+                    font-family: "cd-medium";
+                }
+            }
+        }
+    }   
+}
+
+    .banner{
+        &__wrapper{
+            h1{
+                color: $clr-light;
+                font-size: 10rem;
+            }
+            @include mediaQuery{
+                h1{
+                    color: $clr-light;
+                    font-size: 10rem;
+                }
+            }
+            text-align: center;
+            h1{
+                color: $clr-light;
+                // font-size: 10rem;
+            }
+            h3{
+                font-family: "cd-regular";
+                color: $clr-light;
+            }
+        }
+        figure{
+        .img-wrap-contain{
+            transform: translateY(160px);
+            img{
+            display: inline-block;
+            text-align: center;
+            transform: translateY(160px);
+            }
+        
+            @include mediaQuery{
+
+            }
+        }
+    }
+    }
+
+}
